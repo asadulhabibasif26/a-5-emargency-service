@@ -82,3 +82,333 @@ document.getElementById('railway-heard').addEventListener('click' , function(){
     heartCounter();
 })
 
+
+// call btn function section 
+
+document.getElementById('ne-call-btn').addEventListener('click' , function(){
+    // click and - coin 
+    const title = document.getElementById('ne-title').innerText
+    const callNumber = document.getElementById('ne-number').innerText
+    const availableCoin = document.getElementById('available-coin')
+    const availableCoinNumber = parseInt(document.getElementById('available-coin').innerText)
+    const newAvailableCoin = availableCoinNumber - 20 ;
+    const totalNewAvailableCoin = newAvailableCoin;
+    if(availableCoinNumber < 20){
+        alert("Minium 20 Coin Required For a Call")
+        return;
+    }
+    alert('calling ' + title +" "+ callNumber)
+
+    availableCoin.innerText = totalNewAvailableCoin ;
+
+    // push in history 
+    const callHistory = document.getElementById('call-history');
+    
+    const now = new Date();
+    const date = now.toLocaleTimeString();
+
+    const div = document.createElement('div');
+
+    div.innerHTML = `
+    <div class="h-[86px] bg-[#FAFAFA] w-[95%] mx-auto rounded-xl flex justify-between p-3 items-center">
+                        <div>
+                            <h1 class="font-semibold mb-1">${title}</h1>
+                            <p class="text-[#5C5C5C] text-lg">${callNumber}</p>
+                        </div>
+                        <div>
+                            <p class="font-semibold">${date}</p>
+                        </div>
+                    </div>
+    `
+    callHistory.appendChild(div) ;
+
+})
+document.getElementById('police-call-btn').addEventListener('click' , function(){
+    // click and - coin 
+    const availableCoin = document.getElementById('available-coin')
+    const availableCoinNumber = parseInt(document.getElementById('available-coin').innerText)
+    const newAvailableCoin = availableCoinNumber - 20 ;
+    const totalNewAvailableCoin = newAvailableCoin;
+    if(availableCoinNumber < 20){
+        alert("Minium 20 Coin Required For a Call")
+        return;
+    }
+    const title = document.getElementById('police-title').innerText
+    const callNumber = document.getElementById('police-number').innerText
+    alert('calling ' + title +" "+ callNumber)
+    availableCoin.innerText = totalNewAvailableCoin ;
+
+    // push in history 
+    const callHistory = document.getElementById('call-history');
+    const now = new Date();
+    const date = now.toLocaleTimeString();
+
+    const div = document.createElement('div');
+
+    div.innerHTML = `
+    <div class="h-[86px] bg-[#FAFAFA] w-[95%] mx-auto rounded-xl flex justify-between p-3 items-center">
+                        <div>
+                            <h1 class="font-semibold mb-1">${title}</h1>
+                            <p class="text-[#5C5C5C] text-lg">${callNumber}</p>
+                        </div>
+                        <div>
+                            <p class="font-semibold">${date}</p>
+                        </div>
+                    </div>
+    `
+    callHistory.appendChild(div) ;
+
+})
+document.getElementById('fire-call-btn').addEventListener('click' , function(){
+    // click and - coin 
+    const availableCoin = document.getElementById('available-coin')
+    const availableCoinNumber = parseInt(document.getElementById('available-coin').innerText)
+    const newAvailableCoin = availableCoinNumber - 20 ;
+    const totalNewAvailableCoin = newAvailableCoin;
+    if(availableCoinNumber < 20){
+        alert("Minium 20 Coin Required For a Call")
+        return;
+    }
+    const title = document.getElementById('fire-title').innerText
+    const callNumber = document.getElementById('fire-number').innerText
+    alert('calling ' + title +" "+ callNumber)    
+
+    availableCoin.innerText = totalNewAvailableCoin ;
+
+    // push in history 
+    const callHistory = document.getElementById('call-history');
+    const now = new Date();
+    const date = now.toLocaleTimeString();
+
+    const div = document.createElement('div');
+
+    div.innerHTML = `
+    <div class="h-[86px] bg-[#FAFAFA] w-[95%] mx-auto rounded-xl flex justify-between p-3 items-center">
+                        <div>
+                            <h1 class="font-semibold mb-1">${title}</h1>
+                            <p class="text-[#5C5C5C] text-lg">${callNumber}</p>
+                        </div>
+                        <div>
+                            <p class="font-semibold">${date}</p>
+                        </div>
+                    </div>
+    `
+    callHistory.appendChild(div) ;
+
+})
+document.getElementById('ambulance-call-btn').addEventListener('click' , function(){
+    // click and - coin 
+    const availableCoin = document.getElementById('available-coin')
+    const availableCoinNumber = parseInt(document.getElementById('available-coin').innerText)
+    const newAvailableCoin = availableCoinNumber - 20 ;
+    const totalNewAvailableCoin = newAvailableCoin;
+    if(availableCoinNumber < 20){
+        alert("Minium 20 Coin Required For a Call")
+        return;
+    }
+    const title = document.getElementById('ambulance-title').innerText
+    const callNumber = document.getElementById('ambulance-number').innerText
+    alert('calling ' + title +" "+ callNumber)
+    availableCoin.innerText = totalNewAvailableCoin ;
+
+    // push in history 
+    const callHistory = document.getElementById('call-history');
+    const now = new Date();
+    const date = now.toLocaleTimeString();
+
+    const div = document.createElement('div');
+
+    div.innerHTML = `
+    <div class="h-[86px] bg-[#FAFAFA] w-[95%] mx-auto rounded-xl flex justify-between p-3 items-center">
+                        <div>
+                            <h1 class="font-semibold mb-1">${title}</h1>
+                            <p class="text-[#5C5C5C] text-lg">${callNumber}</p>
+                        </div>
+                        <div>
+                            <p class="font-semibold">${date}</p>
+                        </div>
+                    </div>
+    `
+    callHistory.appendChild(div) ;
+
+})
+document.getElementById('w&c-call-btn').addEventListener('click' , function(){
+    // click and - coin 
+    const availableCoin = document.getElementById('available-coin')
+    const availableCoinNumber = parseInt(document.getElementById('available-coin').innerText)
+    const newAvailableCoin = availableCoinNumber - 20 ;
+    const totalNewAvailableCoin = newAvailableCoin;
+    if(availableCoinNumber < 20){
+        alert("Minium 20 Coin Required For a Call")
+        return;
+    }
+    const title = document.getElementById('w&c-title').innerText
+    const callNumber = document.getElementById('w&c-number').innerText
+    alert('calling ' + title +" "+ callNumber)
+    availableCoin.innerText = totalNewAvailableCoin ;
+
+    // push in history 
+    const callHistory = document.getElementById('call-history');
+    const now = new Date();
+    const date = now.toLocaleTimeString();
+
+    const div = document.createElement('div');
+
+    div.innerHTML = `
+    <div class="h-[86px] bg-[#FAFAFA] w-[95%] mx-auto rounded-xl flex justify-between p-3 items-center">
+                        <div>
+                            <h1 class="font-semibold mb-1">${title}</h1>
+                            <p class="text-[#5C5C5C] text-lg">${callNumber}</p>
+                        </div>
+                        <div>
+                            <p class="font-semibold">${date}</p>
+                        </div>
+                    </div>
+    `
+    callHistory.appendChild(div) ;
+
+})
+document.getElementById('dudok-call-btn').addEventListener('click' , function(){
+    // click and - coin 
+    const availableCoin = document.getElementById('available-coin')
+    const availableCoinNumber = parseInt(document.getElementById('available-coin').innerText)
+    const newAvailableCoin = availableCoinNumber - 20 ;
+    const totalNewAvailableCoin = newAvailableCoin;
+    if(availableCoinNumber < 20){
+        alert("Minium 20 Coin Required For a Call")
+        return;
+    }
+    const title = document.getElementById('ac-title').innerText
+    const callNumber = document.getElementById('ac-number').innerText
+    alert('calling ' + title +" "+ callNumber)
+    availableCoin.innerText = totalNewAvailableCoin ;
+
+    // push in history 
+    const callHistory = document.getElementById('call-history');
+    const now = new Date();
+    const date = now.toLocaleTimeString();
+
+    const div = document.createElement('div');
+
+    div.innerHTML = `
+    <div class="h-[86px] bg-[#FAFAFA] w-[95%] mx-auto rounded-xl flex justify-between p-3 items-center">
+                        <div>
+                            <h1 class="font-semibold mb-1">${title}</h1>
+                            <p class="text-[#5C5C5C] text-lg">${callNumber}</p>
+                        </div>
+                        <div>
+                            <p class="font-semibold">${date}</p>
+                        </div>
+                    </div>
+    `
+    callHistory.appendChild(div) ;
+
+})
+document.getElementById('electricity-call-btn').addEventListener('click' , function(){
+    // click and - coin 
+    const availableCoin = document.getElementById('available-coin')
+    const availableCoinNumber = parseInt(document.getElementById('available-coin').innerText)
+    const newAvailableCoin = availableCoinNumber - 20 ;
+    const totalNewAvailableCoin = newAvailableCoin;
+    if(availableCoinNumber < 20){
+        alert("Minium 20 Coin Required For a Call")
+        return;
+    }
+    const title = document.getElementById('Electricity-title').innerText
+    const callNumber = document.getElementById('Electricity-number').innerText
+    alert('calling ' + title +" "+ callNumber)
+    availableCoin.innerText = totalNewAvailableCoin ;
+
+    // push in history 
+    const callHistory = document.getElementById('call-history');
+    const now = new Date();
+    const date = now.toLocaleTimeString();
+
+    const div = document.createElement('div');
+
+    div.innerHTML = `
+    <div class="h-[86px] bg-[#FAFAFA] w-[95%] mx-auto rounded-xl flex justify-between p-3 items-center">
+                        <div>
+                            <h1 class="font-semibold mb-1">${title}</h1>
+                            <p class="text-[#5C5C5C] text-lg">${callNumber}</p>
+                        </div>
+                        <div>
+                            <p class="font-semibold">${date}</p>
+                        </div>
+                    </div>
+    `
+    callHistory.appendChild(div) ;
+
+})
+document.getElementById('brac-call-btn').addEventListener('click' , function(){
+    // click and - coin 
+    const availableCoin = document.getElementById('available-coin')
+    const availableCoinNumber = parseInt(document.getElementById('available-coin').innerText)
+    const newAvailableCoin = availableCoinNumber - 20 ;
+    const totalNewAvailableCoin = newAvailableCoin;
+    if(availableCoinNumber < 20){
+        alert("Minium 20 Coin Required For a Call")
+        return;
+    }
+    const title = document.getElementById('Brac-title').innerText
+    const callNumber = document.getElementById('brac-number').innerText
+    alert('calling ' + title +" "+ callNumber)
+    availableCoin.innerText = totalNewAvailableCoin ;
+
+    // push in history 
+    const callHistory = document.getElementById('call-history');
+    const now = new Date();
+    const date = now.toLocaleTimeString();
+
+    const div = document.createElement('div');
+
+    div.innerHTML = `
+    <div class="h-[86px] bg-[#FAFAFA] w-[95%] mx-auto rounded-xl flex justify-between p-3 items-center">
+                        <div>
+                            <h1 class="font-semibold mb-1">${title}</h1>
+                            <p class="text-[#5C5C5C] text-lg">${callNumber}</p>
+                        </div>
+                        <div>
+                            <p class="font-semibold">${date}</p>
+                        </div>
+                    </div>
+    `
+    callHistory.appendChild(div) ;
+
+})
+document.getElementById('railway-call-btn').addEventListener('click' , function(){
+    // click and - coin 
+    const availableCoin = document.getElementById('available-coin')
+    const availableCoinNumber = parseInt(document.getElementById('available-coin').innerText)
+    const newAvailableCoin = availableCoinNumber - 20 ;
+    const totalNewAvailableCoin = newAvailableCoin;
+    if(availableCoinNumber < 20){
+        alert("Minium 20 Coin Required For a Call")
+        return;
+    }
+    const title = document.getElementById('railway-title').innerText
+    const callNumber = document.getElementById('railway-number').innerText
+    alert('calling ' + title +" "+ callNumber)
+    availableCoin.innerText = totalNewAvailableCoin ;
+
+    // push in history 
+    const callHistory = document.getElementById('call-history');
+    const now = new Date();
+    const date = now.toLocaleTimeString();
+
+    const div = document.createElement('div');
+
+    div.innerHTML = `
+    <div class="h-[86px] bg-[#FAFAFA] w-[95%] mx-auto rounded-xl flex justify-between p-3 items-center">
+                        <div>
+                            <h1 class="font-semibold mb-1">${title}</h1>
+                            <p class="text-[#5C5C5C] text-lg">${callNumber}</p>
+                        </div>
+                        <div>
+                            <p class="font-semibold">${date}</p>
+                        </div>
+                    </div>
+    `
+    callHistory.appendChild(div) ;
+
+})
