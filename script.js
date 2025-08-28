@@ -1,4 +1,4 @@
-// shared function 
+// Copy Btn Click Count section 
 
 function copyCounter ( number , title) {
     
@@ -41,7 +41,44 @@ document.getElementById('railway-copy-btn').addEventListener('click' , function(
     copyCounter('railway-number' , 'railway-title');
 })
 
+// heart btn click section 
 
 
+function heartCounter() {
+    const heartContainer = document.getElementById('heart-container');
+    const heartContainerNumber = parseInt(document.getElementById('heart-container').innerText);
 
+    const newHeartContainer = heartContainerNumber + 1 ;
+
+    heartContainer.innerText = newHeartContainer
+}
+
+
+document.getElementById('ne-heard').addEventListener('click' , function(){
+    heartCounter();
+})
+document.getElementById('police-heard').addEventListener('click' , function(){
+    heartCounter();
+})
+document.getElementById('fire-heard').addEventListener('click' , function(){
+    heartCounter();
+})
+document.getElementById('ambulance-heard').addEventListener('click' , function(){
+    heartCounter();
+})
+document.getElementById('w&c-heard').addEventListener('click' , function(){
+    heartCounter();
+})
+document.getElementById('dudok-heard').addEventListener('click' , function(){
+    heartCounter();
+})
+document.getElementById('electricity-herad').addEventListener('click' , function(){
+    heartCounter();
+})
+document.getElementById('brac-heard').addEventListener('click' , function(){
+    heartCounter();
+})
+document.getElementById('railway-heard').addEventListener('click' , function(){
+    heartCounter();
+})
 
