@@ -8,6 +8,8 @@ function copyCounter ( number , title) {
     const copyContainer = document.getElementById('copy-container')
     const copyContainerNumber = parseInt(document.getElementById('copy-container').innerText)
 
+    navigator.clipboard.writeText(copyNumber);
+
     const newCopyContainer = copyContainerNumber + 1 ;
 
     copyContainer.innerText = newCopyContainer
